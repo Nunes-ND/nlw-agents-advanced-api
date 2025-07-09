@@ -8,6 +8,7 @@
     "dev": "node --no-warnings --experimental-strip-types --env-file .env --watch src/http/server.ts",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
+    "db:seed": "node --env-file .env --experimental-strip-types --no-warnings src/database/seed.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
