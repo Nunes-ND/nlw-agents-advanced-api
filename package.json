@@ -1,33 +1,35 @@
 {
-	"name": "backend",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"start": "node --no-warnings --experimental-strip-types src/http/server.ts",
-		"dev": "node --no-warnings --experimental-strip-types --env-file .env --watch src/http/server.ts",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Nunes-ND/nlw-agents-advanced-api.git"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"type": "module",
-	"bugs": {
-		"url": "https://github.com/Nunes-ND/nlw-agents-advanced-api/issues"
-	},
-	"homepage": "https://github.com/Nunes-ND/nlw-agents-advanced-api#readme",
-	"devDependencies": {
-		"@types/node": "^24.0.12",
-		"typescript": "^5.8.3"
-	},
-	"dependencies": {
-		"@fastify/cors": "^11.0.1",
-		"fastify": "^5.4.0",
-		"fastify-type-provider-zod": "^5.0.2",
-		"zod": "^4.0.0"
-	}
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --no-warnings --experimental-strip-types src/http/server.ts",
+    "dev": "node --no-warnings --experimental-strip-types --env-file .env --watch src/http/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nunes-ND/nlw-agents-advanced-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Nunes-ND/nlw-agents-advanced-api/issues"
+  },
+  "homepage": "https://github.com/Nunes-ND/nlw-agents-advanced-api#readme",
+  "devDependencies": {
+    "@biomejs/biome": "2.0.6",
+    "@types/node": "^24.0.12",
+    "typescript": "^5.8.3",
+    "ultracite": "5.0.32"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.0.1",
+    "fastify": "^5.4.0",
+    "fastify-type-provider-zod": "^5.0.2",
+    "zod": "^4.0.0"
+  }
 }
