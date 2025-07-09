@@ -17,5 +17,9 @@
 	"bugs": {
 		"url": "https://github.com/Nunes-ND/nlw-agents-advanced-api/issues"
 	},
-	"homepage": "https://github.com/Nunes-ND/nlw-agents-advanced-api#readme"
+	"homepage": "https://github.com/Nunes-ND/nlw-agents-advanced-api#readme",
+	"devDependencies": {
+		"@types/node": "^24.0.12",
+		"typescript": "^5.8.3"
+	}
 }
