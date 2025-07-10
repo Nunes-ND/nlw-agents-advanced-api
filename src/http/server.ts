@@ -6,6 +6,7 @@ import {
   type ZodTypeProvider,
 } from 'fastify-type-provider-zod';
 import { env } from './env.ts';
+import { getRoomsRoute } from './routes/get-rooms.ts';
 
 const app = fastify({ logger: true }).withTypeProvider<ZodTypeProvider>();
 
@@ -20,6 +21,6 @@ app.get('/health', () => {
   return { status: 'ok' };
 });
 
-app.listen({ port: env.PORT }).then((address) => {
-  app.log.info(`Server listening at ${address}`);
-});
+app.register(getRoomsRoute);
+
+app.listen({ port: env.PORT });
