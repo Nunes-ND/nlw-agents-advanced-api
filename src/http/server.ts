@@ -6,6 +6,7 @@ import {
   type ZodTypeProvider,
 } from 'fastify-type-provider-zod';
 import { env } from './env.ts';
+import { createRoomRoute } from './routes/create-room.ts';
 import { getRoomRoute } from './routes/get-room.ts';
 import { getRoomsRoute } from './routes/get-rooms.ts';
 
@@ -22,6 +23,7 @@ app.get('/health', () => {
   return { status: 'ok' };
 });
 
+app.register(createRoomRoute);
 app.register(getRoomRoute);
 app.register(getRoomsRoute);
 
