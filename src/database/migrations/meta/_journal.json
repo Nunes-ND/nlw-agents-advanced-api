@@ -15,6 +15,13 @@
       "when": 1752190798775,
       "tag": "0001_remarkable_warhawk",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1752588041538,
+      "tag": "0002_glamorous_hellcat",
+      "breakpoints": true
     }
   ]
 }
